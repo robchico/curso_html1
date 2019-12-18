@@ -1,54 +1,94 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 16-dic-2019, 17:51:50
-    Author     : tarde
-*/
 
-body{
-    margin: auto;
-    font-size: 62.5%;
-    width: 80%;
+/* reset css */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
 }
-#contenido{
+table { 
+    border-collapse: collapse;
+    border-spacing: 0; }
+td, th, caption { 
+    font-weight: normal;
+    text-align: left; }
+img, fieldset { 
+    border: 0; 
+}
+ol { 
+    padding-left: 1.4em;
+    list-style: decimal; 
+}
+ul { 
+    padding-left: 1.4em;
+    list-style:square; 
+}
+q:before, q:after { 
+    content:''; }
+/* final reset css */
+
+body {
+    font-size: 62.5%;
+    width: 90%;
+    margin: auto;
+}
+#contenido {
     margin-left: 15px;
     margin-top: 15px;
+    
     border: 1px dashed #999;
     border-right: none;
     border-bottom: none;
 }
-h1{
-    font: normal 2.4em Verdana, Arial,Helvetica,sans-serif;
+#galeria{
+    margin-left: 25px;
+}
+#galeria .figura p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: normal;
+
+}
+
+
+h1 {
+    font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
     margin: 0;
     border-bottom: 1px dashed #999;
     padding: 5px 0 5px 8px;
     color: #14556b;
 }
-p{
-    font: 1.6em Georgia, "Times New Roman", Times,serif;
-    margin: 10px 10px 8px 8px;
+p {
+    font: 1.6em/160% Georgia, "Times New Roman", Times, serif;
+    margin: 10px 8px;
+}
+
+img{
+
+    width: 150px;
+    height: 150px;
+}
+
+.foto img{
+    border: 1px solid grey;
+    background-color: #ccc;
+    padding: 4px;
+    position: relative;
+    top:-5px;
+    left: -5px;
+}
+.figura p{
+    font: 1.1em Arial,Helvetica,sans-serif;
+    margin: 10px 0 0 0;
+    height: 5em;
 }
 .figura{
-    margin: 1em;
     float: left;
+    width: 160px;
+    margin: 0  10px 10px 10px;
+
 }
 .foto{
-    border: 4px solid grey;
-    padding: 5px;
-    border:solid gray;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;
-    -ms-transition: -ms-transform 0.3s ease-in-out 0.1s;
-    -moz-transition: -moz-transform 0.3s ease-in-out 0.1s;
-}
-.foto:hover{
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-}
-.intro{
-    font: normal 1.5em Verdana, Arial,Helvetica,sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

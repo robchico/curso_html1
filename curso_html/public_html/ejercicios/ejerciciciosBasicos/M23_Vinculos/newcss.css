@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-dic-2019, 18:48:44
+    Author     : tarde
+*/
+*{
+
+}
+html{
+    background-color: #ff9;
+    background-image: url("images/bg_banner.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 14%;
+
+}
+body{
+    margin: auto;
+    width: 70%;
+    border: 2px solid grey;
+    height: 1000px;
+    padding: 5px;
+}
+p{
+    text-align: justify;
+}
+#principal h1{
+    color:blue;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+#principal h1 strong{
+    color:yellow;
+    margin-right:-1.2em;
+    font-size: 100px;
+}
+#principal h2{
+    border-bottom: 2px solid black;
+}
+.byline {
+    color: grey;
+}
+.byline strong {
+    color: navy;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+#recursos{
+    float: right;
+    background-color: yellow;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    padding: 10px;
+}
+h3 + p{
+    margin-left: 250px;
+    margin-right: 50px;
+}
+h3 + p:first-line{
+    color: gray;
+}
+ul{
+    list-style-type:square;
+    padding-left:1em
+} 
+
+li {
+    padding-left:0
+}
+a:link{
+    text-decoration:none;
+    
+}
+/*a[href*="informe.pdf"]{
+    background:url("images/acrobat.png") center right no-repeat;
+    
+}*/
+a[href*="informe.pdf"]:after{
+    content: "";
+    display: block;
+    background: url("images/acrobat.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 0 70px 0 0;
+}
+
+
+#correo{
+    margin-left: 250px;
+}

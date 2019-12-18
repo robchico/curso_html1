@@ -50,7 +50,8 @@ body{
     color: #323A3F;
     margin-bottom: 20px;
 }
-#anuncio{
+
+#anuncio1{
     margin-top: 115px;
     background-image: url("images/perg_medio.jpg");
     background-position: top;
@@ -58,7 +59,7 @@ body{
     margin-left: 20px;
     margin-right: 600px;
 }
-#anuncio h2{
+#anuncio1 h2{
     font: italic 20px Georgia, "Times New Roman",Times,serif;
     text-align: center;
     text-transform: uppercase;
@@ -67,20 +68,20 @@ body{
     height: 40px;
     margin-top: -50px;
 }
-#anuncio ul{
+#anuncio1 ul{
     font: italic 14px Tohoma, Geneva,sans-serif;
     padding-bottom: 10px;    
 }
-#anuncio li{
+#anuncio1 li{
     list-style: none;
     list-style-image: url("images/vineta.png");
     margin-left: 45px;
     margin-right: 45px;
 }
 
-#anuncio:after{
+#anuncio1:after{
     content: url("images/perg_inf.jpg");
 }
-#anuncio:before{
+#anuncio1:before{
     content: url("images/perg-sup.jpg");
 }
