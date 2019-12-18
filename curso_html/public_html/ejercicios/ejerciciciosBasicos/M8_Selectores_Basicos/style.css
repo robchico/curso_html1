@@ -1,0 +1,43 @@
+*{
+	
+	background-color:blue;
+	background-image:url("imagenes/fondo.jpg");
+	background-repeat: repeat-y;
+	background-position: top center;
+	width:760px;
+	margin: auto;
+	text-align:justify;
+	
+	
+}
+p{
+	width:600px;
+	margin-bottom:20px;
+	
+}
+
+h1,h2,h3{
+	color:#393;
+	font-family: Baskerviller, "Palatino Linotype", Times, serif;
+	border-top: 2px solid;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.atencion p{
+	color:#000;
+	background-color:#ff9;
+	border:2px dotted blue;
+	padding:20px;
+	margin-top:20px;
+	width:600px;
+	
+}
+
+/* se situa en h1 y busca el primer p*/
+h1+p{
+	color:#f60;
+	font-size:1.2em;
+}
+p strong{
+	color:#f60;
+}

@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-dic-2019, 18:40:35
+    Author     : tarde
+*/
+
+body{
+    background-image: url("images/fondo_web.png");
+    background-repeat:repeat-x;
+}
+#cont_principal{
+    background-color: white;
+    background-image: url("images/fondo_pr.jpg");
+    background-repeat: no-repeat;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+#principal{
+    float: right;
+    /* falta algo*/
+
+    width: 565px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+#banner{
+    margin-top: 48px;
+}
+#banner h1{
+    font: normal 48px Georgia, "Times New Roman",Times,serif;
+    text-align: right;
+    color: #271D32;
+}
+#principal h2{
+    font: normal 24px Tohoma, Geneva,sans-serif;
+    margin-bottom: 15px;
+    background-image: url("images/subrayado.png");
+    background-repeat: no-repeat;
+    background-position:bottom;
+    padding-bottom: 7px;
+}
+#principal p{
+    font: normal 14px Tohoma, Geneva,sans-serif;
+    color: #323A3F;
+    margin-bottom: 20px;
+}
+#anuncio{
+    margin-top: 115px;
+    background-image: url("images/perg_medio.jpg");
+    background-position: top;
+    background-repeat:repeat-y;
+    margin-left: 20px;
+    margin-right: 600px;
+}
+#anuncio h2{
+    font: italic 20px Georgia, "Times New Roman",Times,serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    height: 40px;
+    margin-top: -50px;
+}
+#anuncio ul{
+    font: italic 14px Tohoma, Geneva,sans-serif;
+    padding-bottom: 10px;    
+}
+#anuncio li{
+    list-style: none;
+    list-style-image: url("images/vineta.png");
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#anuncio:after{
+    content: url("images/perg_inf.jpg");
+}
+#anuncio:before{
+    content: url("images/perg-sup.jpg");
+}

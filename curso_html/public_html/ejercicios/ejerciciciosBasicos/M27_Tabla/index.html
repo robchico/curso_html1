@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS con tablas</title>
+        <link href="css/M27_principal.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body class="secondary" id="lorem">
+        <header>
+            <img src="" width="571" height="82" alt="CSS: The Missing Manual" id="logo">
+            <ul id="herramientasSitio">
+                <li><a href="#">Contactar</a></li>
+                <li><a href="#">Direcciones</a></li>
+                <li>
+                    <form name="form1" method="post" action="">
+                        <div><input type="text" name="busqueda" id="busqueda"></div>
+                    </form>
+                </li>
+            </ul>
+        </header>
+
+        <nav id="principal">
+            <ul id="nav">
+                <li><a href="index.html" class="linkHome">Inicio</a></li>
+                <li><a href="#" class="linkAbout">Acerca de nosotros</a></li>
+                <li><a href="#" class="linkLorem">Nuestros productos</a></li>
+                <li><a href="#" class="linkMattis">Quiénes somos</a></li>
+                <li><a href="#" class="linkEuismod">Contáctanos</a></li>
+                <li><a href="#" class="linkVenenatis">Ven a vernos</a></li>
+            </ul>
+        </nav>
+
+        <div id="cuerpoWrap">
+            <div id="cuerpo">
+                <aside id="sidebar">
+                    <h2>PRODUCTOS</h2>
+                    <ul>
+                        <li><a href="#">Acerca de nosostros</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Ven a vernos</a></li>
+                    </ul>
+                    <div class="actions">
+                        <a class="callToAction" href="#">Hierbas medicinales</a>
+                        <a class="callToAction" href="#">eucaliptos</a>
+                        <a class="callToAction" href="#">aromáticas</a>
+                        <a class="callToAction" href="#">otras...</a> </div>
+                </aside>
+
+                <div id="content">
+                    <h1>Bienvenidos a la tienda.</h1>
+                    <table id="inventario" width="100%">
+                        <caption>
+                            Tabla 1. En almacén
+                        </caption>
+
+                        <tr>
+                            <th scope="col">Productos</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Calificación</th>
+                        </tr>
+                        <tr class="alternas">
+                            <td> Romero</td>
+                            <td>20.90 €</td>
+                            <td class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star">
+                                <img src="imagenes/star.png" width="16" height="16" alt="star">
+                                <img src="imagenes/star.png" width="16" height="16" alt="star">
+                                <img src="imagenes/star.png" width="16" height="16" alt="star"></td>
+                        </tr>
+                        <tr>
+                            <td> Tomillo</td>
+                            <td>15.50 €</td>
+                            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+                        </tr>
+                        <tr class="alternas">
+                            <td>Llantén</td>
+                            <td>18.20 €</td>
+                            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Salvia</td>
+                            <td>15.25 €</td>
+                            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+                        </tr>
+                        <tr class="alternas">
+                            <td>Aloe Vera</td>
+                            <td>26.30 €</td>
+                            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Ruda</td>
+                            <td>15.25 €</td>
+                            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star">
+                                    <img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+                        </tr>
+                        <tr class="alternas">
+                            <td> Albahaca</td>
+                            <td>1.95 €</td>
+                            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Limón</td>
+                            <td>35.20 €</td>
+                            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+                        </tr>
+                        <tr class="alternas">
+                            <td>Lino</td>
+                            <td>45 €</td>
+                            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span>
+                                <span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

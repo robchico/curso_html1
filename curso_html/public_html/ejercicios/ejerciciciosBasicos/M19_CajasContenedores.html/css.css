@@ -1,0 +1,42 @@
+
+body{
+    font-size: 62.5%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#contenido{
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 1px dashed #999;
+    border-right: none;
+    border-bottom: none;
+}
+h1{
+    font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    border-bottom: 1px dashed #999;
+    padding: 5px 0 5px 8px;
+    color: #14556b;
+}
+p{
+    font: 1.6em/160% Georgia, "Times New Roman", Times, serif;
+    margin: 10px 8px;
+}
+#imagenPie{
+    float: right;
+    margin: 10px;
+}
+
+img {
+    border:1px solid grey;
+    padding: 10px;
+}
+figcaption {
+    border:1px dashed grey;
+    background-color: #00ff99;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.4em;
+    width: 220px;
+    padding: 5px;
+}

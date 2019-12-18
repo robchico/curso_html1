@@ -1,0 +1,44 @@
+
+
+body{
+	color:#b1967c;
+	font-family: "Palatino Linotype","Book Antiqua", Palatino, serif;
+	background-color:#e1cdff;
+	background-image:url("images/fondo_cuerpo.png");
+	background-repeat:repeat-x;
+	width:800px;
+	margin: auto;
+	margin-top:110px;
+	text-align: justify;
+}
+h1{
+	font-size: 3em;
+	font-family:"arial Black", Gadget, sans-serif;
+}
+h2{
+	font-size: 2.2em;
+	color:#690;
+	margin-bottom: 5px;
+}
+#principal{
+	float: left;
+	width:550px;
+}
+#principal h2{
+	color:#e8a064;
+	border-bottom:2px solid #FFF;
+	background-image:url("images/flor.png");
+	background-repeat: no-repeat;
+	padding: 0 0 2px 80px
+}
+#principal .introduccion{
+	margin-left:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	margin-bottom: 25px;
+	color:black;
+	line-height:150%
+}
+#lateral{
+	margin-left:620px;
+}
