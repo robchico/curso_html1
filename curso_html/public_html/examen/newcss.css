@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17-dic-2019, 17:07:14
+    Author     : tarde
+*/
+
+div img{
+    width: 500px;
+    height: 450px;
+}
+
+/*.card-hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}*/
+#a1,#a2 {
+  
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+
+#a1:hover,#a2:hover{
+    padding: 50px;
+    transform: scale(1.5);
+
+}
+#foto{
+    width: 200px;
+    height: 150px;
+}
