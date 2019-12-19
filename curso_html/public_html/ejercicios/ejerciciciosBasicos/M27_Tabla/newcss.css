@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-dic-2019, 18:42:49
+    Author     : tarde
+*/
+html{
+    /* background: 
+         url("imagenes/banner.png"), 
+         url("imagenes/bg_nav.png");
+     /*,background-repeat: no-repeat;
+     background-size: 100% 13%;*/
+    /*background-size: 100% 20%;
+    background-repeat: no-repeat;*/
+    background: 
+        url("imagenes/banner.png") 0 0 no-repeat,
+        url("imagenes/bg_nav.png") 0 13% no-repeat, 
+
+        #ff9;
+    background-size: 100% 12%, 100% 5%, 0;/*url("imagenes/bg_nav.png") 0% 13% no-repeat,*/
+}
+body{
+    width: 70%;
+    margin: auto;
+}
+#herramientasSitio{
+    float:right;
+}
+#principal{
+    clear: both;
+
+}
+#principal{
+    /*background-image: url("imagenes/bg_nav.png");*/
+    background-repeat: repeat-x;
+    background-size: contain;
+
+}
+ul#nav li{
+    list-style-type: none;
+
+    display: inline;
+    font-size: 20px;
+}
+ul#nav li a{
+    text-decoration:none;
+}
