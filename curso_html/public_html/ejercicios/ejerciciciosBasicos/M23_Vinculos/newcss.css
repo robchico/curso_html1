@@ -1,15 +1,6 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 18-dic-2019, 18:48:44
-    Author     : tarde
-*/
-*{
 
-}
+
+
 html{
     background-color: #ff9;
     background-image: url("images/bg_banner.jpg") ;
@@ -73,7 +64,7 @@ li {
 }
 a:link{
     text-decoration:none;
-    
+
 }
 /*a[href*="informe.pdf"]{
     background:url("images/acrobat.png") center right no-repeat;
@@ -88,8 +79,66 @@ a[href*="informe.pdf"]:after{
     float: right;
     margin: 0 70px 0 0;
 }
+a[href*="plantilla.doc"]:after{
+    content: "";
+    display: block;
+    background: url("images/word.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 0 25px 0 0;
+}
+a[href*="logos.zip"]:after{
+    content: "";
+    display: block;
+    background: url("images/zip.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 0 70px 0 0;
+}
+a[href*="logos.zip"]:after{
+    content: "";
+    display: block;
+    background: url("images/zip.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 0 70px 0 0;
+}
+a[href*="http://www.aeat.es"]:after{
+    content: "";
+    display: block;
+    background: url("images/globe.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 0 70px 0 0;
+}
+a[href*="http://www.google.com"]:after{
+    content: "";
+    display: block;
+    background: url("images/globe.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: -15px 70px 0 0;
+}
 
-
+h3:nth-child(n+2) {
+  color: blue;
+  font-size: 24px;
+}
 #correo{
     margin-left: 250px;
+    color: grey;
+}
+a[href*="mailto:cursos@aplicacionesweb.com"]:before{
+    content: "";
+    display: block;
+    background: url("images/email.gif") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin:  4px 6px 0 0;
 }
