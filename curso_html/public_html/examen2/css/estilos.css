@@ -1,0 +1,118 @@
+/*************** cabecera ******************/
+h1{
+    background-color: aquamarine;
+}
+/**************** barra de menús ***********/
+nav{
+    background-color: aquamarine;
+    width: 40%;
+
+}
+nav ul li{
+    /*quitamos viñetas*/
+    list-style-type: none;
+    /*ponemos en línea los "li"*/
+    display: inline;
+    
+
+}
+nav ul li:hover{
+
+    /*    font-size: 18px;*/
+    box-shadow: 2px 4px 30px violet;
+    border-radius:5px;
+}
+nav ul li a{
+    /*nos quita el subrayado de los enlaces o
+   hipervinculos*/
+    text-decoration: none;
+}
+/***************** barra lateral ***********/
+aside{
+    /* background-color: grey;*/
+    background: rgba(183,222,237,1);
+    background: -moz-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(113,206,239,1) 36%, rgba(33,180,226,1) 53%, rgba(126,159,225,1) 70%, rgba(224,137,224,1) 88%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(24%, rgba(113,206,239,1)), color-stop(36%, rgba(113,206,239,1)), color-stop(53%, rgba(33,180,226,1)), color-stop(70%, rgba(126,159,225,1)), color-stop(88%, rgba(224,137,224,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(113,206,239,1) 36%, rgba(33,180,226,1) 53%, rgba(126,159,225,1) 70%, rgba(224,137,224,1) 88%);
+    background: -o-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(113,206,239,1) 36%, rgba(33,180,226,1) 53%, rgba(126,159,225,1) 70%, rgba(224,137,224,1) 88%);
+    background: -ms-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(113,206,239,1) 36%, rgba(33,180,226,1) 53%, rgba(126,159,225,1) 70%, rgba(224,137,224,1) 88%);
+    background: linear-gradient(135deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(113,206,239,1) 36%, rgba(33,180,226,1) 53%, rgba(126,159,225,1) 70%, rgba(224,137,224,1) 88%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#e089e0', GradientType=1 );
+    /* background: url(http://api.thumbr.it/whitenoise-200x1209.png?background=4ea6caff&noise=e657e6&density=85&opacity=26); */
+    height: 1209px;
+    width: 200px;
+    float: left;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+}
+#primero{
+/*    padding-top: 30px;*/
+}
+/************** primer contenedor *********/
+#contenedor{
+    background-color: violet;
+    height: 1186px;
+    margin-left: 210px;
+}
+#pie{
+    background-color: yellow;
+}
+#titulo{
+    border: 2px solid red;
+    width: 15%;
+    margin: auto;
+    text-align: center;
+    /*bordes redondeados iguales para todas
+    las esquinas*/
+    /*    border-radius: 20px;*/
+    /*bordes redondeados distintos para todas
+    las esquinas*/
+    /*border-radius: 2px 10px 40px 15px;*/
+    /*bordes redondeados alternos para todas
+    las esquinas*/
+    border-radius: 2px 40px;
+    /*coloca una sombra a la etiqueta que 
+    empieza en 2px para el eje x, 4px para el
+    eje y 30px para la atenuación y blue para 
+    el color de la sombra*/
+    box-shadow: 2px 4px 30px blue;
+    /*coloca una sombra al texto empieza en 
+    2px para el eje x, 4px para el eje y, 
+    y red para el color de la sombra*/
+    text-shadow: 2px 4px red;
+    margin-bottom: 50px;
+}
+
+@font-face{
+    font-family: 'mifuente';
+    src: url('../fuentes/sweetgentle.otf');
+}
+#fuente{
+    font-family: mifuente;
+    margin: 1em;
+}
+
+nav{
+/*  width: 45%;
+  height: 20%;*/
+  padding: 0.1px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3.5s;
+}
+
+@keyframes example {
+  0%   {background-color: yellow; left:0px; top:0px;width: 25%;opacity: 0.5}
+  25%  {background-color: blue;left:0px; top:200px;}
+  50%  {background-color: green; left:200px; top:200px;}
+  75%  {background-color: aquamarine; left:300px; top:0px;  }
+  100% {background-color: yellow; left:0px; top:0px; width: 45%; opacity: 0.5}
+  
+}
+li{
+    margin-left: 15px;
+}

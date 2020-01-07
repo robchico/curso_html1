@@ -18,7 +18,6 @@ html{
     background: 
         url("imagenes/banner.png") 0 0 no-repeat,
         url("imagenes/bg_nav.png") 0 13% no-repeat, 
-
         #ff9;
     background-size: 100% 12%, 100% 5%, 0;/*url("imagenes/bg_nav.png") 0% 13% no-repeat,*/
 }
