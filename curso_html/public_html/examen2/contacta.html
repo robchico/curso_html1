@@ -15,7 +15,7 @@ and open the template in the editor.
         <!--header: cabecera dentro del body
         sirve para posicionamiento-->
         <header>
-            <h1>Este sería el título de nuestra web</h1>
+            <h1>Este sería el título de nuestra web Contacta</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Quiénes somos</a></li>
@@ -30,5 +30,33 @@ and open the template in the editor.
             <blockquote><a href="segundo.html">Segundo elemento</a></blockquote>
             <blockquote><a href="tercero.html">Tercer elemento</a></blockquote>
         </aside>
+        <section id="contenedor">
+            <h3>Contact Form</h3>
+
+            <div class="container">
+                <form action="">
+
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <select id="country" name="country">
+                        <option value="">Select one...</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <!--<input type="submit" value="Submit" onclick="alert(Date())">-->
+                    <button type="button" onclick="alert(Date())">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer id="pie">
+            <p>Derechos reservados</p>
+            <p>Tfno: 666666666</p>
+        </footer>
     </body>
 </html>
