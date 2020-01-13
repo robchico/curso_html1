@@ -1,0 +1,29 @@
+
+
+body{
+    width: 95%;
+    margin: auto;
+}
+#nav ul li{
+    /*quitamos viñetas*/
+    list-style-type: none;
+    /*ponemos en línea los "li"*/
+    display: inline;
+    margin-left: -30px;
+}
+#nav ul li a{
+    color: #ff9;
+    padding-right: 30px; 
+    background-color: green;
+    margin-left:  10px;
+}
+
+#noticias li{
+    list-style-type: none;
+    margin-left: -40px;
+    width: 170px;
+    border: 1px dotted #06c;
+}
+#principal{
+
+}
