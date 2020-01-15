@@ -109,30 +109,31 @@ nav{
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     position: relative;
-    animation-name: example;
+    animation-name: movimientoNav;
     animation-duration: 3.5s;
 
 }
 
-@keyframes example {
+@keyframes movimientoNav {
     0%   {background-color: yellow; left:0px; top:0px;width: 25%;opacity: 0.5}
     25%  {background-color: blue;left:0px; top:200px;}
     50%  {background-color: green; left:200px; top:200px;}
-    75%  {background-color: aquamarine; left:300px; top:0px;  }
-    100% {background-color: yellow; left:0px; top:0px; width: 45%; opacity: 0.5}
+    75%  {background-color: yellow; left:300px; top:0px;  }
+    100% {background-color: aquamarine; left:0px; top:0px; width: 50%; opacity: 0.8}
 
 }
 
 li{
     margin-left: 15px;
 }
-
+/*
 #imagen1{
     border: 1px solid black;
     margin: auto;
     width: 70%;
     height: 35%;
-}
+}*/
+
 
 #imagen1 img {
     width: 100%;

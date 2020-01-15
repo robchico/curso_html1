@@ -1,4 +1,6 @@
+/*
 
+*/
 body{
     font-size: 62.5%;
     text-align: justify;
@@ -32,6 +34,7 @@ img {
     border:1px solid grey;
     padding: 10px;
 }
+
 figcaption {
     border:1px dashed grey;
     background-color: #00ff99;

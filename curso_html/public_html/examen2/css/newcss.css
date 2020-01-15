@@ -1,0 +1,50 @@
+/* CSS */
+/*ejemplo animaciones: https://dev.to/devmount/learn-css-animation-by-creating-pure-css-loaders-3lm6*/
+/*.simple-spinner {
+  height: 48px;
+  width: 48px;
+  border: 5px solid rgba(150, 150, 150, 0.2);
+  border-radius: 50%;
+  border-top-color: rgb(150, 150, 150);
+  animation: rotate 1s 0s infinite ease-in-out alternate;
+}
+@keyframes rotate {
+  0%   { transform: rotate(0);      }
+  100% { transform: rotate(360deg); }
+}*/
+
+/*.double-spinner {
+  height: 48px;
+  width: 48px;
+  border: 5px solid rgba(150, 150, 150, 0.2);
+  border-radius: 50%;
+  border-top-color: rgb(150, 150, 150);
+  animation: rotate 1s 0s infinite linear normal;
+}
+.double-spinner::after {
+  content: '';
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin: 10px auto;
+  border: inherit;
+  border-radius: inherit;
+  border-top-color: inherit;
+  animation: rotate .5s 0s infinite linear reverse;
+}
+@keyframes rotate {
+  0%   { transform: rotate(0);      }
+  100% { transform: rotate(360deg); }
+}*/
+.pulse {
+    margin: auto;
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 50%;
+  animation: pulse 1s 0s infinite cubic-bezier(0.000, 1.010, 0.5, 1.200) normal;
+}
+@keyframes pulse {
+  from { transform: scale(0);   opacity: 1; }
+  to   { transform: scale(1.0); opacity: 0; }
+}
