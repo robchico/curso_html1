@@ -1,0 +1,29 @@
+/* 
+    Created on : 20-ene-2020, 19:07:33
+    Author     : tarde
+*/
+
+
+*{
+
+    font-family: mifuente;
+
+}
+@font-face{
+    font-family: 'mifuente';
+    /*    src: url('../fuentes/sweetgentle.otf');*/
+    src: url('../style/ConcertOne-Regular.ttf');
+}
+
+/*form modal*/
+.contenedor-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.contenedor-modal button {
+  position: relative;
+  top: 40%;
+}

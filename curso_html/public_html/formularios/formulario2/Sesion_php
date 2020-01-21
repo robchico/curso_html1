@@ -1,0 +1,91 @@
+<?php
+session_start();
+if (isset($_SESSION['usuario'])) {
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIENVENIDO A NUESTRA APLICACIÓN</title>
+<script>
+function TiempoActividad()
+{
+    setTimeout("DestruirSesion()", 600000);
+}
+function DestruirSesion()
+{
+    location.href = "logout.php";
+}
+</script>
+<body onload="TiempoActividad()">
+<h1>HOLA: <?php echo $_SESSION['usuario']; ?> '</h1>
+<p>Te has logueado exitosamente!!! hemos colocado 10 minutos de actividad en esta sesión si estas inactivo</p>
+</body>
+</html>';
+<?php
+}else{
+header('Location: login.php');
+}
+?>
+/*********************************************************************************/
+<?php
+session_start();
+session_destroy();
+echo 'Ha terminado la session';
+echo '<script>location.href = "login.php"</script>';
+?>
+
+/*******************************************************************/
+// Archivo inicio_sesion.php
+// se ejecuta solamente en el login
+ 
+session_start();
+$_SESSION['intervalo']  = 30; // en minutos
+$_SESSION['inicio'] = time();
+ 
+ 
+// Archivo control_sesion.php
+// se ejecuta cada vez que se haga un proceso o cambio de pagina
+ 
+session_start();
+$segundos = time();
+$tiempo_transcurrido = $segundos;
+$tiempo_maximo = $_SESSION['inicio']  + ( $_SESSION['intervalo'] * 60 ) ; // se multiplica por 60 segundos ya que se configura en minutos
+if($tiempo_transcurrido > $tiempo_maximo){
+header('location: mi_pagina_login.php');
+}else{
+// se resetea el inicio
+$_SESSION['inicio'] = time();
+}
+
+/*******************************************************************************/
+Por lo tanto, calcularemos el tiempo transcurrido (tiempo transcurrido = (hora actual - fecha guardada))
+de la siguiente manera:
+
+<?
+//iniciamos la sesión
+session_name("loginUsuario");
+session_start();
+
+//antes de hacer los cálculos, compruebo que el usuario está logueado
+//utilizamos el mismo script que antes
+if ($_SESSION["autentificado"] != "SI") {
+    //si no está logueado lo envío a la página de autentificación
+    header("Location: index.php");
+} else {
+    //sino, calculamos el tiempo transcurrido
+    $fechaGuardada = $_SESSION["ultimoAcceso"];
+    $ahora = date("Y-n-j H:i:s");
+    $tiempo_transcurrido = (strtotime($ahora)-strtotime($fechaGuardada));
+
+    //comparamos el tiempo transcurrido
+     if($tiempo_transcurrido >= 600) {
+     //si pasaron 10 minutos o más
+      session_destroy(); // destruyo la sesión
+      header("Location: index.php"); //envío al usuario a la pag. de autenticación
+      //sino, actualizo la fecha de la sesión
+    }else {
+    $_SESSION["ultimoAcceso"] = $ahora;
+   }
+}
+?>
