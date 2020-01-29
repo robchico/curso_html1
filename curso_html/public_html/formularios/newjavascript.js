@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 
 });
-
+/*//gestion cookies
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -54,7 +54,9 @@ function checkCookie() {
     }
   }
 }
+ */
 
+/*
 var state = new Array("Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antarctica", "Antigua and Barbuda",
 "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados",
 "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana",
@@ -78,4 +80,4 @@ var state = new Array("Afghanistan", "Albania", "Algeria", "Andorra", "Angola", 
 "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe");
 for(var hi=0; hi<state.length; hi++){
     document.write("<option value=''+state[hi]+''>"+state[hi]+"</option>");
-};
+};*/
